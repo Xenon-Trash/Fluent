@@ -15,6 +15,10 @@ function Paragraph:New(Config)
 	Paragraph.Frame.BackgroundTransparency = 0.92
 	Paragraph.Border.Transparency = 0.6
 
+    function Paragraph:SetValue(Value)
+        self.Frame.Text = Value
+    end
+    
 	return Paragraph
 end
 
